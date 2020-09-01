@@ -55,3 +55,6 @@ int TotalCacheNumber = 0;
 int CurrentCacheNumber = 0;
 char URLCache[MAX_CACHE_LENGTH][MAX_URL_LENGTH];
 char IPCache[MAX_CACHE_LENGTH][MAX_IP_LENGTH];
+
+void convertToURL(char* url, char* requestURL);
+void outPutCurrentTime();

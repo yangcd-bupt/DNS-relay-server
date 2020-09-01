@@ -1,7 +1,7 @@
 ﻿  main.cpp
   正在生成代码
-  2 of 31 functions ( 6.5%) were compiled, the rest were copied from previous compilation.
+  28 of 31 functions (90.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    0 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
-  DNS.vcxproj -> C:\Users\starry_sky\Desktop\计算机网络课程设计\DNS\Release\DNS.exe
+  DNS.vcxproj -> E:\GitHub\DNS-relay-server\DNS\Release\DNS.exe

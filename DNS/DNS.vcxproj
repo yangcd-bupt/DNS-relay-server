@@ -124,6 +124,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="head.h" />
+    <ClInclude Include="initProgram.h" />
+    <ClInclude Include="receiveFromLocal.h" />
+    <ClInclude Include="receiveFromOut.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />

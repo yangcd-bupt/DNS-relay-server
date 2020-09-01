@@ -18,6 +18,15 @@
     <ClInclude Include="head.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="receiveFromLocal.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="receiveFromOut.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="initProgram.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
