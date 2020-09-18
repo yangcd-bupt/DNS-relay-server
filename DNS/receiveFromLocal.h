@@ -65,9 +65,9 @@ void receiveFromLocal()
 				if ((strcmp("0.0.0.0", currentIP)) == 0) {
 					//如果在黑名单中则返回未能查询到该域名IP地址
 					memcpy(sendbuf, buffer, bufferLength);
-					unsigned short flag = htons(0x8180);
+					unsigned short flag = htons(0x8183);
 					memcpy(&sendbuf[2], &flag, sizeof(unsigned short)); //设置首部标志域
-					flag = htons(0x0000);	//将回答个数设置为1
+					flag = htons(0x0001);	//将回答个数设置为1
 					memcpy(&sendbuf[6], &flag, sizeof(unsigned short));
 				}
 				else {
@@ -122,7 +122,7 @@ void receiveFromLocal()
 					else {
 						cout << Number << ":  ";
 						outPutCurrentTime();
-						cout << "  " << "Client" << "  " << "127.0.0.1" << "     " << requestURL << ",  " << "TYPE  28" << ",  " << "CLASS  1" << endl;
+						cout << "  " << "Client" << "  " << "127.0.0.1" << "     " << requestURL << ",  " << "TYPE  A" << ",  " << "CLASS  1" << endl;
 						Number++;
 
 
@@ -199,7 +199,7 @@ void receiveFromLocal()
 				else {
 					cout << Number << ":  ";
 					outPutCurrentTime();
-					cout << "  " << "Client" << "  " << "127.0.0.1" << "     " << requestURL << ",  " << "TYPE  28" << ",  " << "CLASS  1" << endl;
+					cout << "  " << "Client" << "  " << "127.0.0.1" << "     " << requestURL << ",  " << "TYPE  A" << ",  " << "CLASS  1" << endl;
 					Number++;
 					IPV4 = true;
 				}

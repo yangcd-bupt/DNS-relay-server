@@ -2,7 +2,7 @@
 #include "head.h"
 
 void listTitle() {
-	printf("Class:2018211319\n");
+	printf("Class:2018211319\n");//小组信息
 	printf("TeamMember:Qiao Sen,Wang Mingzi,Yang Chengdong\n");
 	printf("\n");
 

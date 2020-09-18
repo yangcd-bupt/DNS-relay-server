@@ -16,7 +16,7 @@ void outPutCurrentTime()
 	printf("%d/%d/%d %d:%d:%d", lt->tm_year + 1900, lt->tm_mon+1, lt->tm_mday,lt->tm_hour, lt->tm_min, lt->tm_sec);//输出结果
 }
 
-//将形为6github3com0的url转为github.com形式的requestIP
+//将形为6github3com0的url转为github.com形式的requestURL
 void convertToURL(char* url, char* requestURL)
 {
 	int i = 0, j = 0, k = 0, len = strlen(url);
@@ -51,11 +51,12 @@ int main(int argc, char* argv[]) {
 	localSocket = socket(AF_INET, SOCK_DGRAM, 0);
 	outSocket = socket(AF_INET, SOCK_DGRAM, 0);
 
+	
 	//将Socket接口改为无阻塞模式
 	int nonBlock = 1;
 	ioctlsocket(outSocket, FIONBIO, (u_long FAR*) & nonBlock);
 	ioctlsocket(localSocket, FIONBIO, (u_long FAR*) & nonBlock);
-
+	
 	localName.sin_family = AF_INET;//Address family AF_INET代表TCP / IP协议族
 	localName.sin_addr.s_addr = INADDR_ANY;    //设置本地地址为任意IP地址
 	localName.sin_port = htons(53); //设置DNS接口为53

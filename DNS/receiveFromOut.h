@@ -73,7 +73,6 @@ void receiveFromOut()
 					TotalCacheNumber = MAX_CACHE_LENGTH;
 				if (debugLevel >= 1)
 				{
-
 					cout << Number << ":  ";
 					outPutCurrentTime();
 					cout << "  " << "Client" << "  " << "127.0.0.1" << "     " << "1.0.0.127.in-addr.arpa, TYPE 12 ,CLASS 1" << endl;
